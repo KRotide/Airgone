@@ -1,0 +1,48 @@
+.nav {
+    background: url(../../assets/images/backgrounds/backgroundNav.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    &__brand h1 {
+        color: #f9fafa;
+        font-family: 'Kalnia', serif;
+        font-size: calc(1.375rem + 3vw);
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 1);
+    }
+
+    &__btn {
+        background-color: #f9fafa;
+        font-size: inherit;
+    }
+
+    &__link {
+        color: #f9fafa;
+        font-size: 20px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 575px) {
+            font-size: 14px;
+        }
+
+        &:hover {
+            color: #f9fafa;
+            mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+            mask-size: 200%;
+            animation: shine 2s infinite;
+        }
+    }
+}
+
+@keyframes shine {
+    from {
+      mask-position: 150%;
+    }
+    
+    to {
+      mask-position: -50%;
+    }
+  }

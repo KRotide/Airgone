@@ -1,0 +1,37 @@
+[
+    {
+        "id": "0",
+        "href": "https://www.tiktok.com/@airgone",
+        "alt": "TikTok logo",
+        "src": "tiktok.webp",
+        "title": "Lien vers mon profil TikTok"
+    },
+    {
+        "id": "1",
+        "href": "https://www.instagram.com/airgone_fr/",
+        "alt": "Instagram logo",
+        "src": "instagram.webp",
+        "title": "Lien vers mon profil Instagram"
+    },
+    {
+        "id": "2",
+        "href": "https://www.facebook.com/airgone/",
+        "alt": "Facebook logo",
+        "src": "facebook.webp",
+        "title": "Lien vers mon profil Facebook"
+    },
+    {
+        "id": "3",
+        "href": "https://twitter.com/AirgoneFr",
+        "alt": "X logo",
+        "src": "x.webp",
+        "title": "Lien vers mon profil X"
+    },
+    {
+        "id": "4",
+        "href": "https://opensea.io/collection/airgone",
+        "alt": "Opensea logo",
+        "src": "opensea.webp",
+        "title": "Lien vers mon profil Opensea"
+    }
+]

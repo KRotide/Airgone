@@ -47,7 +47,7 @@
   
   &__content {
     height: 100%;
-    color: #f9fafa;
+    color: $main-color;
   
     &__frame {
       position: absolute;
@@ -70,7 +70,7 @@
 
   &__socialNetworks {
     position: absolute;
-    bottom: 10px;
+    bottom: 24px;
 
     &__li:not(:last-child) {
       margin-right: 2rem;
@@ -88,7 +88,7 @@
       &__img {
         padding: 2px;
         border-radius: 50%;
-        background-color: #f9fafa;
+        background-color: $main-color;
         box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
         transition: all 0.3s;
 

@@ -1,12 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Kalnia&display=swap");
-
-
+@import "../sass/utils/variables";
 
 @import "../components/Header/Header.scss";
 @import "../components/Nav/Nav.scss";
 @import "../components/Banner/Banner.scss";
 
+@import "../components/Slides/Slides.scss";
+
 body {
     font-family: 'Playfair Display', serif;
     font-weight: bold;
+}
+
+h2 {
+    color: $dark-color;
+    font-size: calc(1.325rem + 1.25vw);
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 10%;
+        height: 3px;
+        background-color: $dark-color;
+        display: block;
+        margin-top: 10px;
+    }
 }

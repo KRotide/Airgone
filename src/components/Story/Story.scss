@@ -1,0 +1,65 @@
+.story {
+    width: 100%;
+    background: url(../../assets/images/backgrounds/backgroundWhite.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+
+    &__frame {
+        max-width: 1020px;
+        width: 100%;
+    }
+
+    &__text {
+        color: $dark-color;
+        font-family:'Times New Roman', Times, serif;
+        font-size: larger;
+        font-weight: normal;
+        line-height: normal;
+        max-width: 571px;
+        max-height: 382px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(249, 250, 250, 0.7);
+        border-radius: 5%;
+
+        @media screen and (max-width: 1039px) {
+            font-size: large;
+        }
+
+        @media screen and (max-width: 989px) {
+            font-size:medium;
+        }
+
+        @media screen and (max-width: 849px) {
+            max-height: 263px;
+            overflow: auto;
+            text-overflow: ellipsis;
+        }
+
+        @media screen and (max-width: 714px) {
+            max-height: 212px;
+        }
+
+        @media screen and (max-width: 584px) {
+            font-size: small;
+            max-height: 161px;
+        }
+
+        @media screen and (max-width: 449px) {
+            max-height: 110px;
+        }
+
+        @media screen and (max-width: 319px) {
+            max-height: 84px;
+        }
+
+        &__span {
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

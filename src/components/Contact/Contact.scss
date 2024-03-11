@@ -1,0 +1,76 @@
+.contact {
+    background: url(../../assets/images/backgrounds/backgroundWhite.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+
+    &__content {
+        background-color: $main-color;
+        box-shadow: 0 0 15px -1px #141414;
+
+        &__form {
+            &__label {
+                color: $dark-color;
+            }
+
+            &__input,
+            &__button {
+                border: 0;
+                background-color: $main-color;
+            }
+
+            &__input {
+                font-family: 'Times New Roman', Times, serif;
+                box-shadow:  inset 2px 2px 5px grey, inset -5px -5px 10px $light-color;
+
+                &:focus {
+                    border-color: unset;
+                    box-shadow: inset 1px 1px 2px grey, inset -1px -1px 2px $light-color;
+                }
+            }
+
+            &__button {
+                width: 25%;
+                color: $dark-color;
+                font-weight: bold;
+                padding: 12px;
+                border-radius: 8px*20;
+                box-shadow: -5px -5px 20px $light-color, 5px 5px 20px grey;
+
+                @media screen and (max-width: 889px) {
+                    width: 50%;
+                }
+
+                @media screen and (max-width: 489px) {
+                    font-size: 14px;
+                    width: 100%;
+                }
+
+                &:hover {
+                    color: $dark-color;
+                    background-color: $light-color;
+                    box-shadow: -2px -2px 5px $light-color, 2px 2px 5px grey;
+                }
+
+                &:active {
+                    color: $dark-color !important;
+                    background-color: $light-color !important;
+                    box-shadow: inset 1px 1px 2px grey, inset -1px -1px 2px $light-color;
+                }
+            }
+        }
+
+        &__toast {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+
+            &__header {
+                justify-content: space-between;
+            }
+        }
+    }
+}

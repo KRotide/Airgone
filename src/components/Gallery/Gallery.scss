@@ -1,0 +1,23 @@
+.gallery {
+    background: url(../../assets/images/backgrounds/backgroundGrey.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+    &__title {
+        color: $main-color;
+
+        &::after {
+            background-color: $main-color;
+        }
+    }
+
+    &__content {
+        height: 700px;
+        background-color: $main-color;
+        border: 4mm ridge rgba(0, 0, 0, 0.4);
+        box-shadow: 5px 0 10px rgba(117, 115, 115, 0.8);
+    }
+}

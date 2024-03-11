@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Carousel } from "react-bootstrap";
+import { Carousel } from 'react-bootstrap';
 
 import DecoLeft from "../../assets/images/backgrounds/decoration.webp"
 import DecoRight from "../../assets/images/backgrounds/decoration1.webp"

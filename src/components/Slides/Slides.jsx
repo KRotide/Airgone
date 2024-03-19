@@ -6,11 +6,13 @@ import DecoRight from "../../assets/images/backgrounds/decoration1.webp"
 
 import video from "../../assets/images/slides/video.mp4"
 import video1 from "../../assets/images/slides/video1.mp4"
+import video2 from "../../assets/images/slides/video2.mp4"
+import video3 from "../../assets/images/slides/video3.mp4"
 
 export default function Slides() {
     const [currentVideo, setCurrentVideo] = useState(null);
 
-    const videos = [{ src: video }, { src: video1 }];
+    const videos = [{ src: video }, { src: video1 }, { src: video2 }, { src: video3 }];
 
     const handleVideoPlay = (index) => {
         if (currentVideo !== null && currentVideo !== index) {
@@ -34,8 +36,9 @@ export default function Slides() {
                         <h2 className="fw-bold text-center my-md-4 my-2">Diapo</h2>
                         <div className="row justify-content-center">
                             <Carousel
+                                interval={null}
                                 className="slides__carousel my-4"
-                                onClick={() => handleVideoPlay(null)}
+                                onSelect={handleVideoPlay}
                             >
                                 {videos.map((video, index) => (
                                     <Carousel.Item key={index}>

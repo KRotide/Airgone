@@ -1,0 +1,44 @@
+.footer {
+    background: url(../../assets/images/backgrounds/backgroundNav.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    &__brand {
+        height: calc(1.869rem + 3vw);
+        width: auto;
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1));
+    }
+
+    &__li {
+        color: grey;
+        border: unset;
+        background-color: unset;
+
+        &__txt {
+            font-weight: normal;
+
+            &__icon {
+                filter: invert(.5);
+                transition: all 0.3s;
+
+                &:hover {
+                    filter: invert(1);
+                    transform: scale(1.2)
+                }
+            }
+        }
+
+        &__img {
+            padding: 2px;
+            border-radius: 50%;
+            background-color: grey;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background-color: $main-color;
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

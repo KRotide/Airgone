@@ -25,7 +25,7 @@ export default function Contact() {
             <div className="container-fluid p-0">
                 <h2 className="fw-bold text-center my-md-4 my-2">Contact</h2>
                 <div className="row justify-content-center">
-                    <div className="col-6 m-4 p-4 contact__content">
+                    <div className="col-9 col-md-6 m-4 p-4 contact__content">
                         <Form className="contact__content__form" ref={form} onSubmit={sendEmail}>
                             <Form.Group className="mb-4" controlId="formBasicName">
                                 <Form.Label className="contact__content__form__label">Nom</Form.Label>

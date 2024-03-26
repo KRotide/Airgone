@@ -1,0 +1,69 @@
+[
+    {
+        "id": "0",
+        "mainUrl": "painting.webp",
+        "alt": "abstract painting"
+    },
+    {
+        "id": "1",
+        "mainUrl": "painting1.webp",
+        "alt": "abstract painting n°1",
+        "url": [
+            "painting1.webp",
+            "painting1-1.webp"
+        ]
+    },
+    {
+        "id": "2",
+        "mainUrl": "painting2.webp",
+        "alt": "abstract painting n°2",
+        "url": [
+            "painting2.webp",
+            "painting2-1.webp",
+            "painting2-2.webp"
+        ]
+    },
+    {
+        "id": "3",
+        "mainUrl": "painting3.webp",
+        "alt": "abstract painting n°3",
+        "url": [
+            "painting3.webp",
+            "painting3-1.webp",
+            "painting3-2.webp"
+        ]
+    },
+    {
+        "id": "4",
+        "mainUrl": "painting4.webp",
+        "alt": "abstract painting n°4",
+        "url": [
+            "painting4.webp",
+            "painting4-1.webp",
+            "painting4-2.webp",
+            "painting4-3.webp"
+        ]
+    },
+    {
+        "id": "5",
+        "mainUrl": "painting5.webp",
+        "alt": "abstract painting n°5",
+        "url": [
+            "painting5.webp",
+            "painting5-1.webp",
+            "painting5-2.webp",
+            "painting5-3.webp"
+        ]
+    },
+    {
+        "id": "6",
+        "mainUrl": "painting6.webp",
+        "alt": "abstract painting n°6",
+        "url": [
+            "painting6.webp",
+            "painting6-1.webp",
+            "painting6-2.webp",
+            "painting6-3.webp"
+        ]
+    }
+]

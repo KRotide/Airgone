@@ -8,6 +8,11 @@
         height: calc(1.869rem + 3vw);
         width: auto;
         filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1));
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            animation: shake 2s linear infinite;
+        }
     }
 
     &__li {
@@ -18,13 +23,12 @@
         &__txt {
             font-weight: normal;
 
-            &__icon {
+            & a {
                 filter: invert(.5);
                 transition: all 0.3s;
 
                 &:hover {
                     filter: invert(1);
-                    transform: scale(1.2)
                 }
             }
         }
@@ -37,8 +41,33 @@
 
             &:hover {
                 background-color: $main-color;
+                filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 1));
                 transform: rotate(360deg);
             }
         }
     }
 }
+
+@keyframes shake {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }

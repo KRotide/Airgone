@@ -26,13 +26,12 @@ export default function Footer() {
                     </div>
                     <div className="col-12 col-md-4 p-0 text-md-center">
                         <ListGroup as="ul" className="list-unstyled mb-0">
-                            <ListGroup.Item as="li" className="footer__li">
+                            <ListGroup.Item as="li" className="footer__li p-0">
                                 <p className="footer__li__txt mx-0 my-2">
                                     Airgone Artiste Peintre | &copy; 2024 - Site développé par
                                     <a href="https://portfolio-caroline-ruiz.netlify.app/" title="Lien vers le portfolio de Caroline Ruiz" className="text-reset text-decoration-none">
                                         &nbsp;Caroline Ruiz&nbsp;
                                         <img
-                                            className="footer__li__txt__icon"
                                             src={LinkIcon}
                                             alt="Icône de lien"
                                         />

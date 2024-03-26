@@ -15,9 +15,19 @@
     }
 
     &__content {
-        height: 700px;
+        height: 86vh;
         background-color: $main-color;
         border: 4mm ridge rgba(0, 0, 0, 0.4);
         box-shadow: 5px 0 10px rgba(117, 115, 115, 0.8);
+
+        &__carousel {
+            height: 100%;
+
+            &__img {
+                width: auto;
+                max-height: 744.33px;
+                height: 100%;
+            }
+        }
     }
 }

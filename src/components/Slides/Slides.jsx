@@ -32,7 +32,7 @@ export default function Slides() {
             </div>
             <div className="container-fluid p-0">
                 <div className="row m-0 align-items-center justify-content-center">
-                    <div className="col-4 p-0">
+                    <div className="col-8 col-lg-6 p-0">
                         <h2 className="fw-bold text-center my-md-4 my-2">Diapo</h2>
                         <div className="row justify-content-center">
                             <Carousel

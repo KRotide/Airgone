@@ -1,4 +1,6 @@
 .gallery {
+    width: 100%;
+    height: 100vh;
     background: url(../../assets/images/backgrounds/backgroundGrey.webp);
     background-position: center;
     background-attachment: fixed;
@@ -15,18 +17,19 @@
     }
 
     &__content {
-        height: 86vh;
-        background-color: $main-color;
-        border: 4mm ridge rgba(0, 0, 0, 0.4);
-        box-shadow: 5px 0 10px rgba(117, 115, 115, 0.8);
 
         &__carousel {
-            height: 100%;
+            background-color: $main-color;
+            border: 4mm ridge rgba(0, 0, 0, 0.4);
+            box-shadow: 5px 0 10px rgba(117, 115, 115, 0.8);
 
             &__img {
+                display: block;
+                margin: auto;
+                max-width: 100%;
                 width: auto;
-                max-height: 744.33px;
-                height: 100%;
+                max-height: 720px;
+                object-fit: contain;
             }
         }
     }

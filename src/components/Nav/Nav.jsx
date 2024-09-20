@@ -20,12 +20,12 @@ export default function Nav() {
 
     return (
         <>
-            {/* {!scrolled && (
-                <span className="tyspanedText">
+            {!scrolled && (
+                <span className="container-fluid d-flex justify-content-center text-center text">
                     Bienvenue sur le site d'Airgone, artiste peintre lyonnais.
                 </span>
-            )} */}
-            <nav className={`nav navbar navbar-expand-md fixed-top py-0 ${scrolled ? "scrolled" : ""}`}>
+            )}
+            <nav className={`nav navbar navbar-expand-md fixed-top py-0 ${scrolled ? "scrolled" : "d-none"}`}>
                 <div className="container-fluid mx-sm-5 py-0">
                     <a className="nav__brand navbar-brand py-0" href="#top">
                         <h1 className="fw-bold">Airgone</h1>

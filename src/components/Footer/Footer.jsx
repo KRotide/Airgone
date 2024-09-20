@@ -22,7 +22,6 @@ export default function Footer() {
                             variant="none"
                             onClick={handleShowModal}
                             className="navbar-brand py-0"
-                            url={url}
                         >
                             <img
                                 className="footer__brand my-2"

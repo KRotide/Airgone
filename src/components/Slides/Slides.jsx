@@ -8,11 +8,18 @@ import video from "../../assets/images/slides/video.mp4"
 import video1 from "../../assets/images/slides/video1.mp4"
 import video2 from "../../assets/images/slides/video2.mp4"
 import video3 from "../../assets/images/slides/video3.mp4"
+import video4 from "../../assets/images/slides/video4.mp4"
+import video5 from "../../assets/images/slides/video5.mp4"
+import video6 from "../../assets/images/slides/video6.mp4"
+import video7 from "../../assets/images/slides/video7.mp4"
+import video8 from "../../assets/images/slides/video8.mp4"
+import video9 from "../../assets/images/slides/video9.mp4"
+import video10 from "../../assets/images/slides/video10.mp4"
 
 export default function Slides() {
     const [currentVideo, setCurrentVideo] = useState(null);
 
-    const videos = [{ src: video }, { src: video1 }, { src: video2 }, { src: video3 }];
+    const videos = [{ src: video }, { src: video1 }, { src: video2 }, { src: video3 }, { src: video4 }, { src: video5 }, { src: video6 }, { src: video7 }, { src: video8 }, { src: video9 }, { src: video10 }];
 
     const handleVideoPlay = (index) => {
         if (currentVideo !== null && currentVideo !== index) {

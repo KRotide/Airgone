@@ -1,13 +1,23 @@
+.text {
+    color: $main-color;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: calc(1.2rem + 1.25vw);
+    position: absolute;
+    top: 24px;
+    background: linear-gradient(90deg, transparent, $main-color, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 4s linear forwards, colorRestore 0s 4s forwards;
+}
+
 .nav {
     background: url(../../assets/images/backgrounds/backgroundNav.webp);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    opacity: 0;
-
-    &.scrolled {
-        opacity: 1;
-    }
 
     &__brand h1 {
         color: $main-color;
@@ -37,12 +47,33 @@
             color: $main-color;
             mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
             mask-size: 200%;
-            animation: shine 2s infinite;
+            animation: shine2 2s infinite;
         }
     }
 }
 
 @keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+
+    100% {
+        background-position-x: 500%;
+    }
+}
+
+@keyframes colorRestore {
+    100% {
+        color: $main-color;
+        -webkit-text-fill-color: $main-color;
+        background: none;
+        -webkit-background-clip: unset;
+        background-clip: unset;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 1);
+    }
+}
+
+@keyframes shine2 {
     from {
         mask-position: 150%;
     }

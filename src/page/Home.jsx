@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react"
 import Loader from "../components/Loader/Loader"
-import Header from "../components/Header/Header"
-import Slides from "../components/Slides/Slides"
-import Gallery from "../components/Gallery/Gallery"
-import Story from "../components/Story/Story"
-import Contact from "../components/Contact/Contact"
-import Footer from "../components/Footer/Footer"
+const Header = React.lazy(() => import("../components/Header/Header"))
+const Slides = React.lazy(() => import("../components/Slides/Slides"))
+const Gallery = React.lazy(() => import("../components/Gallery/Gallery"))
+const Story = React.lazy(() => import("../components/Story/Story"))
+const Contact = React.lazy(() => import("../components/Contact/Contact"))
+const Footer = React.lazy(() => import("../components/Footer/Footer"))
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -30,7 +30,7 @@ export default function Home() {
         return <Loader />;
     } else {
         return (
-            <>
+            <Suspense fallback={<Loader />}>
                 <Header />
                 <main>
                     <Slides />
@@ -40,7 +40,7 @@ export default function Home() {
                     <Contact />
                 </main>
                 <Footer />
-            </>
+            </Suspense>
         )
     }
 }

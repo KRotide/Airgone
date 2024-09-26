@@ -1,67 +1,71 @@
 .animation {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  mix-blend-mode: screen;
+  animation: smokeAnimation 50s infinite linear;
+  z-index: 1031;
+  pointer-events: none;
+
+  &__smoke {
+    background: url("../../assets/images/backgrounds/smoke.webp") no-repeat;
     width: 100%;
     height: 100%;
-    background-attachment: fixed;
-    background-size: cover;
-    mix-blend-mode: screen;
-    animation: smokeAnimation 50s infinite linear;
-    z-index: 1031;
-    pointer-events: none;
-  
-    &__smoke {
-      background: url("../../assets/images/backgrounds/smoke.png") no-repeat;
-      width: 100%;
-      height: 100%;
-    }
+  }
 }
-  
+
 @keyframes smokeAnimation {
-    0% {
-      opacity: 0;
-      filter: blur(0);
-      transform: translate(-200px,100px) rotate(0deg);
-    }
-    5% {
-      opacity: 0.2;
-    }
-    90% {
-      opacity: 0.8;
-      filter: blur(5px);
-      transform: translate(100px,-100px) rotate(60deg);
-    }
-    95% {
-      opacity: 0.1;
-    }
-    100% {
-      opacity: 0;
-    }
+  0% {
+    opacity: 0;
+    filter: blur(0);
+    transform: translate(-200px, 100px) rotate(0deg);
+  }
+
+  5% {
+    opacity: 0.2;
+  }
+
+  90% {
+    opacity: 0.8;
+    filter: blur(5px);
+    transform: translate(100px, -100px) rotate(60deg);
+  }
+
+  95% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .banner {
   position: relative;
   width: 100vw;
   height: 100vh;
-  
+
   &__content {
     height: 100%;
     color: $main-color;
-  
+
     &__frame {
       position: absolute;
       width: 50%;
       opacity: 0.6;
-  
+
       @media screen and (max-width: 1130px) {
         width: 70%;
       }
     }
-  
+
     &__logo {
       width: 15%;
-  
+
       @media screen and (max-width: 1130px) {
         width: 25%;
       }
@@ -78,6 +82,7 @@
       @media screen and (max-width: 430px) {
         margin-right: 0.6rem;
       }
+
       @media screen and (max-width: 283px) {
         margin-right: unset;
       }
@@ -95,6 +100,7 @@
         @media screen and (max-width: 430px) {
           width: 65%;
         }
+
         @media screen and (max-width: 283px) {
           width: 60%;
         }

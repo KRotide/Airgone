@@ -1,4 +1,4 @@
-import StoryFrame from "../../assets/images/backgrounds/storyFrame.png"
+import StoryFrame from "../../assets/images/backgrounds/storyFrame.webp"
 
 export default function Story() {
     return (

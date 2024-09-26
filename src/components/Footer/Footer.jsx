@@ -11,7 +11,7 @@ export default function Footer() {
     const handleCloseModal = () => setShowModal(false)
     const handleShowModal = () => setShowModal(true)
 
-    const url = ''
+    const url = 'https://airgone.netlify.app/'
 
     return (
         <footer className="footer navbar navbar-expand-md py-0">
@@ -76,7 +76,13 @@ export default function Footer() {
                             <ListGroup.Item as="li" className="footer__li p-0">
                                 <p className="footer__li__txt mx-0 my-2">
                                     Airgone Artiste Peintre | &copy; 2024 - Site développé par
-                                    <a href="https://portfolio-caroline-ruiz.netlify.app/" title="Lien vers le portfolio de Caroline Ruiz" className="text-reset text-decoration-none">
+                                    <a
+                                        href="https://portfolio-caroline-ruiz.netlify.app/"
+                                        title="Lien vers le portfolio de Caroline Ruiz"
+                                        className="text-reset text-decoration-none"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
                                         &nbsp;Caroline Ruiz&nbsp;
                                         <img
                                             src={LinkIcon}
@@ -92,9 +98,9 @@ export default function Footer() {
                             {socialNetworksDatas.map((sN) => (
                                 <ListGroup.Item as="li" key={sN.id} className="list-inline-item m-0 p-0 footer__li">
                                     <a
-                                        className="text-reset text-decoration-none"
                                         href={sN.href}
                                         title={sN.title}
+                                        className="text-reset text-decoration-none"
                                         target="_blank"
                                         rel="noreferrer"
                                     >

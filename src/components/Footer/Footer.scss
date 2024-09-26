@@ -37,7 +37,7 @@
             & .modal-body {
                 display: flex;
                 justify-content: space-around;
-                background-color: grey;
+                background-color: $element-color;
                 border-bottom-left-radius: 0.5rem;
                 border-bottom-right-radius: 0.5rem;
 
@@ -61,7 +61,7 @@
     }
 
     &__li {
-        color: grey;
+        color: $element-color;
         border: unset;
         background-color: unset;
 
@@ -81,7 +81,7 @@
         &__img {
             padding: 2px;
             border-radius: 50%;
-            background-color: grey;
+            background-color: $element-color;
             transition: 0.3s ease-in-out;
 
             &:hover {

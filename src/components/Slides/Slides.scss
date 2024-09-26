@@ -55,7 +55,7 @@
                 }
 
                 &.active {
-                    background-color: grey;
+                    background-color: $element-color;
                     transform: scale(1.2);
                 }
             }

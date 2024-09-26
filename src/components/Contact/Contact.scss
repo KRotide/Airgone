@@ -22,11 +22,11 @@
 
             &__input {
                 font-family: 'Times New Roman', Times, serif;
-                box-shadow:  inset 2px 2px 5px grey, inset -5px -5px 10px $light-color;
+                box-shadow: inset 2px 2px 5px $element-color, inset -5px -5px 10px $light-color;
 
                 &:focus {
                     border-color: unset;
-                    box-shadow: inset 1px 1px 2px grey, inset -1px -1px 2px $light-color;
+                    box-shadow: inset 1px 1px 2px $element-color, inset -1px -1px 2px $light-color;
                 }
             }
 
@@ -36,7 +36,7 @@
                 font-weight: bold;
                 padding: 12px;
                 border-radius: 8px*20;
-                box-shadow: -5px -5px 20px $light-color, 5px 5px 20px grey;
+                box-shadow: -5px -5px 20px $light-color, 5px 5px 20px $element-color;
 
                 @media screen and (max-width: 889px) {
                     width: 50%;
@@ -50,13 +50,13 @@
                 &:hover {
                     color: $dark-color;
                     background-color: $light-color;
-                    box-shadow: -2px -2px 5px $light-color, 2px 2px 5px grey;
+                    box-shadow: -2px -2px 5px $light-color, 2px 2px 5px $element-color;
                 }
 
                 &:active {
                     color: $dark-color !important;
                     background-color: $light-color !important;
-                    box-shadow: inset 1px 1px 2px grey, inset -1px -1px 2px $light-color;
+                    box-shadow: inset 1px 1px 2px $element-color, inset -1px -1px 2px $light-color;
                 }
             }
         }

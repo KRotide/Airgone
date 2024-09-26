@@ -1,18 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Kalnia&display=swap");
-@import "../sass/utils/variables";
+@import "../sass/utils/colors";
 
+@import "../page/Home.scss";
+@import "../components/Loader/Loader.scss";
 @import "../components/Header/Header.scss";
 @import "../components/Nav/Nav.scss";
 @import "../components/Banner/Banner.scss";
-
 @import "../components/Slides/Slides.scss";
 @import "../components/Gallery/Gallery.scss";
 @import "../components/Story/Story.scss";
-
-@import "../page/Home.scss";
-
 @import "../components/Contact/Contact.scss";
-
 @import "../components/Footer/Footer.scss";
 
 body {
